@@ -1,7 +1,8 @@
 import React from 'react'
+import ButtonWrapper from './button.style'
 
 const Button = () => {
-  return <button type='button'>This is sample button</button>
+  return <ButtonWrapper type='button'>This is sample button</ButtonWrapper>
 }
 
 export default Button

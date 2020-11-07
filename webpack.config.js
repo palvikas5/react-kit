@@ -22,7 +22,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
-    library: 'react-kit',
+    library: '@palvikas5/react-kit',
     libraryTarget: 'umd',
   },
 }
