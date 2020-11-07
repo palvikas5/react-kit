@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "target": "es5",
+    "module": "ESNext",
+    "lib": [
+      "DOM",
+      "ES6",
+      "ES2016",
+      "ES2017",
+      "ES2018",
+      "ES2019",
+      "ES2020",
+      "ESNext"
+    ],
+    "allowJs": false,
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "build",
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "src/**/*.test.tsx", "src/**/*.test.ts"]
+}
