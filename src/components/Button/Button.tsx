@@ -1,8 +1,17 @@
 import React from 'react'
 import ButtonWrapper from './button.style'
 
-const Button = () => {
-  return <ButtonWrapper type='button'>This is sample button</ButtonWrapper>
+export interface ButtonProps {
+  children: string | number
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
+}
+
+const Button = ({ children, onClick }: ButtonProps) => {
+  return (
+    <ButtonWrapper type='button' onClick={onClick}>
+      {children}
+    </ButtonWrapper>
+  )
 }
 
 export default Button

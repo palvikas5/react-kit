@@ -1,11 +1,14 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest/globals": true,
+    "jest": true
   },
   "extends": [
     "plugin:react/recommended",
     "airbnb",
+    "plugin:jest/all",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -16,8 +19,15 @@
     "ecmaVersion": 2021,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint", "jest"],
   "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "jest/no-disabled-tests": "error",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "error",
+    "jest/valid-expect": "error",
     "import/no-extraneous-dependencies": "off",
     "react/jsx-one-expression-per-line": "off",
     "no-use-before-define": "off",

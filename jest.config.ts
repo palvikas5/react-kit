@@ -1,0 +1,30 @@
+export default {
+  clearMocks: true,
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.ts*', 'src/**/*.js*', '!src/index.tsx'],
+  coverageDirectory: 'coverage',
+  coveragePathIgnorePatterns: ['/node_modules/'],
+  coverageProvider: 'v8',
+  coverageReporters: ['lcov'],
+  coverageThreshold: {
+    global: {
+      statements: 100,
+      branches: 100,
+      functions: 100,
+      lines: 100,
+    },
+  },
+  notify: true,
+  resetMocks: true,
+  roots: ['src'],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  },
+  setupFilesAfterEnv: ['./jest.setup.ts'],
+  moduleFileExtensions: ['ts', 'tsx', 'js'],
+  testEnvironment: 'jest-environment-jsdom',
+  testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
+  testPathIgnorePatterns: ['/node_modules/'],
+  verbose: true,
+  timers: 'fake',
+}
