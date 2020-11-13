@@ -20,6 +20,3 @@ jobs:
 
       - name: Unit Tests
         run: npm test
-
-      - name: Build Styleguide
-        run: npm run styleguide:build

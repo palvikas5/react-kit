@@ -1,5 +1,4 @@
-node_modules/
-build/
-.idea/
-coverage/
-docs/
+/node_modules/
+/.idea/
+/coverage/
+/build/
