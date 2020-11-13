@@ -3,9 +3,6 @@
   "version": "0.0.2",
   "description": "A react component library",
   "main": "build/index.js",
-  "files": [
-    "build"
-  ],
   "types": "build/index.d.ts",
   "license": "ISC",
   "author": {
@@ -13,21 +10,15 @@
     "email": "palvikas5@gmail.com",
     "url": "https://github.com/palvikas5"
   },
-  "keywords": [
-    "React",
-    "Component",
-    "Library",
-    "Webpack",
-    "Typescript"
-  ],
   "scripts": {
     "build": "webpack --mode production",
     "clean": "rm -rf build",
-    "dev": "webpack --watch",
     "lint": "eslint src --ext js,ts,tsx",
     "lint:fix": "npm run lint -- --fix",
-    "prepublishOnly": "npm run clean && npm run build",
-    "test": "jest"
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "react": ">=17.0.1",
@@ -60,14 +51,24 @@
     "prettier": "^2.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-styleguidist": "^11.1.2",
     "styled-components": "^5.2.1",
     "ts-jest": "^26.4.3",
     "ts-loader": "^8.0.10",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.5",
-    "webpack": "^5.4.0",
+    "webpack": "^4.44.2",
     "webpack-cli": "^4.2.0"
   },
+  "keywords": [
+    "React",
+    "Component",
+    "Library",
+    "Webpack",
+    "Typescript",
+    "Styleguide",
+    "Styleguidist"
+  ],
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "npm run lint:fix"
@@ -79,6 +80,9 @@
       "pre-push": "npm run test"
     }
   },
+  "files": [
+    "build"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
