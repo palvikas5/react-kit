@@ -16,7 +16,8 @@
     "lint": "eslint src --ext js,ts,tsx",
     "lint:fix": "npm run lint -- --fix",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
+    "styleguide:clean": "rm -rf docs",
+    "styleguide:build": "npm run styleguide:clean && styleguidist build",
     "test": "jest",
     "prepublishOnly": "npm run build"
   },
@@ -94,5 +95,5 @@
   "bugs": {
     "url": "https://github.com/palvikas5/react-kit/issues"
   },
-  "homepage": "https://github.com/palvikas5/react-kit#readme"
+  "homepage": "https://palvikas5.github.io/react-kit"
 }
