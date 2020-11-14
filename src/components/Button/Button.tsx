@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonWrapper from './button.style'
+import ButtonWrapper from './Button.style'
 
 export interface ButtonProps {
   children: string | number

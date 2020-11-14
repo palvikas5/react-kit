@@ -73,7 +73,8 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "npm run lint:fix",
-      "npm run styleguide:build"
+      "npm run styleguide:build",
+      "git add ."
     ]
   },
   "husky": {

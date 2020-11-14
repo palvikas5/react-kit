@@ -1,4 +1,5 @@
 import React from 'react'
+import TextInputWrapper from './TextInput.style'
 
 export interface TextInputProps {
   value: string
@@ -14,7 +15,7 @@ const TextInput = ({ value, onTextChange, ariaLabel }: TextInputProps) => {
   }
 
   return (
-    <input
+    <TextInputWrapper
       type='text'
       value={value}
       onChange={onChange}
