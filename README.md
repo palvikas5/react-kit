@@ -1,5 +1,6 @@
 # React Kit
 
-A react component library (https://palvikas5.github.io/react-kit)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/palvikas5/react-kit/CI?style=for-the-badge)
+![Coveralls github](https://img.shields.io/coveralls/github/palvikas5/react-kit?style=for-the-badge)
 
-![CI](https://github.com/palvikas5/react-kit/workflows/CI/badge.svg)
+A react component library (https://palvikas5.github.io/react-kit)
