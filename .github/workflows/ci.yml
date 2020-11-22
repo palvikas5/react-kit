@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
@@ -11,9 +11,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: coverallsapp/github-action@v1.1.2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install via npm
         run: npm install
@@ -23,3 +20,8 @@ jobs:
 
       - name: Unit Tests
         run: npm test
+
+      - name: Coveralls Coverage badge
+        uses: coverallsapp/github-action@v1.1.2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
